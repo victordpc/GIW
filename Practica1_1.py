@@ -58,7 +58,15 @@ def automata(estados, estadosFinales, funcionTransicion, cadena, inicial):
     # Ejecutamos el automata
     resultado, actual = ejecutarAutomata(inicial, cadena, transicion)
 
-    return resultado and actual in estadosFinales
+    salida = ""
+    if not resultado:
+        salida = "Se ha producido un error con los datos proporcionados"
+    elif actual in estadosFinales:
+        salida = "Cadena válida"
+    else:
+        salida = "Cadena invalida"
+
+    return salida
 
 
 estados = [1, 2, 3]
