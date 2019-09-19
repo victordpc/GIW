@@ -41,7 +41,7 @@ def automata(estados, estadosFinales, funcionTransicion, cadena, inicial):
         entrada = cadena[indice-1:indice]
         len(cadena)
 
-        if actual not in transicion or entrda not in transicion[actual]:
+        if actual not in transicion or entrada not in transicion[actual]:
             resultado = False
             continue
 
