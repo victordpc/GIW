@@ -24,7 +24,6 @@ def ejecutarAutomata(inicial, cadena, transicion):
 
     while(resultado and seguir):
         entrada = cadena[indice-1:indice]
-        len(cadena)
 
         if actual not in transicion or entrada not in transicion[actual]:
             resultado = False
