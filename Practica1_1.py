@@ -24,7 +24,6 @@ def ejecutarAutomata(inicial, cadena, transicion):
 
     while(resultado and seguir):
         entrada = cadena[indice-1:indice]
-        len(cadena)
 
         if actual not in transicion or entrada not in transicion[actual]:
             resultado = False
@@ -58,7 +57,15 @@ def automata(estados, estadosFinales, funcionTransicion, cadena, inicial):
     # Ejecutamos el automata
     resultado, actual = ejecutarAutomata(inicial, cadena, transicion)
 
-    return resultado and actual in estadosFinales
+    salida = ""
+    if not resultado:
+        salida = "Se ha producido un error con los datos proporcionados"
+    elif actual in estadosFinales:
+        salida = "Cadena válida"
+    else:
+        salida = "Cadena invalida"
+
+    return salida
 
 
 estados = [1, 2, 3]
