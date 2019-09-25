@@ -26,8 +26,8 @@ def buscarPalabras():
                 resultado[palabra]=len(x)
     return resultado
 
-fichero1="file1.csv"
-fichero2="file2.txt"
+fichero1="vic/file1.csv"
+fichero2="vic/file2.txt"
 
 resultado = buscarPalabras()
             
