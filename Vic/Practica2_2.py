@@ -1,6 +1,7 @@
 import csv
 import json
 import math
+import sys
 
 
 def leer_estaciones():
@@ -12,7 +13,7 @@ def leer_estaciones():
         for linea in entrada:
             if entrada.line_num == 1:
                 continue
-            resultado[int(linea[1])] = linea[2]
+            resultado[int(linea[1])] = [linea[2], linea[24], linea[25]]
 
     return resultado
 
@@ -60,9 +61,32 @@ def presentar_datos(estaciones, valores, museos):
     resultado = dict()
     resultado["año"] = 2019
     resultado["fuente"] = "Ayuntamiento de Madrid"
-    museos = list()
+    listaMuseos = list()
 
-    resultado["museos"] = museos
+    for museo in museos:
+        if 'location' not in museo:
+            continue
+
+        datos = dict()
+        datos["museo"] = museo['title']
+
+        # Calculamos las distancias del museo a todas las estaciones
+        distancias = list()
+        for valor in estaciones.values():
+            distancia = haversine(float(valor[2]), float(
+                valor[1]), museo['location']['latitude'], museo['location']['longitude'])
+            distancias.append([distancia, valor[0]])
+
+        estacion1 = min(item for item in distancias)
+
+        datos["Estación 1"]=dict()
+        datos["Estación 1"]["Nombre"]=estacion1[1]
+        datos["Estación 1"]["Valor"]=valores[estacion1[1]]["Valor"]
+        datos["Estación 1"]["Tipo"]=valores[estacion1[1]]["Tipo"]
+
+        listaMuseos.append(datos)
+
+    resultado["museos"] = listaMuseos
 
     with open("Salida.json", "w", encoding='utf8') as salida:
         json.dump(resultado, salida, indent=2)

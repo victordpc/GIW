@@ -1,5 +1,550 @@
 {
   "a\u00f1o": 2019,
   "fuente": "Ayuntamiento de Madrid",
-  "museos": []
+  "museos": [
+    {
+      "museo": "Casa Museo Lope de Vega",
+      "Estaci\u00f3n 1": {
+        "Nombre": "Pza. del Carmen",
+        "Valor": 14542.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      }
+    },
+    {
+      "museo": "Casita - Museo del Rat\u00f3n P\u00e9rez",
+      "Estaci\u00f3n 1": {
+        "Nombre": "Pza. del Carmen",
+        "Valor": 14542.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      }
+    },
+    {
+      "museo": "Castillo de la Alameda",
+      "Estaci\u00f3n 1": {
+        "Nombre": "Urb. Embajada",
+        "Valor": 15638.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      }
+    },
+    {
+      "museo": "Cas\u00f3n del Buen Retiro",
+      "Estaci\u00f3n 1": {
+        "Nombre": "Parque del Retiro",
+        "Valor": 14941.0,
+        "Tipo": "Ozono"
+      }
+    },
+    {
+      "museo": "Centro Social y Cultural La Casa Encendida",
+      "Estaci\u00f3n 1": {
+        "Nombre": "Mendez Alvaro",
+        "Valor": 12838.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      }
+    },
+    {
+      "museo": "Ermita de San Antonio de la Florida (Museo)",
+      "Estaci\u00f3n 1": {
+        "Nombre": "Pza. de Espa\u00f1a",
+        "Valor": 20147.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      }
+    },
+    {
+      "museo": "Espacio Fundaci\u00f3n Telef\u00f3nica",
+      "Estaci\u00f3n 1": {
+        "Nombre": "Pza. del Carmen",
+        "Valor": 14542.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      }
+    },
+    {
+      "museo": "Fundaci\u00f3n AMYC (Arte Moderno y Contempor\u00e1neo). Casa - Museo Fuente del Rey",
+      "Estaci\u00f3n 1": {
+        "Nombre": "Casa de Campo",
+        "Valor": 16209.0,
+        "Tipo": "Ozono"
+      }
+    },
+    {
+      "museo": "Monasterio de las Descalzas Reales",
+      "Estaci\u00f3n 1": {
+        "Nombre": "Pza. del Carmen",
+        "Valor": 14542.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      }
+    },
+    {
+      "museo": "Museo ABC",
+      "Estaci\u00f3n 1": {
+        "Nombre": "Pza. de Espa\u00f1a",
+        "Valor": 20147.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      }
+    },
+    {
+      "museo": "Museo Africano Mundo Negro",
+      "Estaci\u00f3n 1": {
+        "Nombre": "Arturo Soria",
+        "Valor": 12195.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      }
+    },
+    {
+      "museo": "Museo Arqueol\u00f3gico Nacional",
+      "Estaci\u00f3n 1": {
+        "Nombre": "Escuelas Aguirre",
+        "Valor": 19486.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      }
+    },
+    {
+      "museo": "Museo Casa de la Moneda",
+      "Estaci\u00f3n 1": {
+        "Nombre": "Escuelas Aguirre",
+        "Valor": 19486.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      }
+    },
+    {
+      "museo": "Museo Cerralbo",
+      "Estaci\u00f3n 1": {
+        "Nombre": "Pza. de Espa\u00f1a",
+        "Valor": 20147.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      }
+    },
+    {
+      "museo": "Museo EMT",
+      "Estaci\u00f3n 1": {
+        "Nombre": "Plaza Castilla",
+        "Valor": 14454.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      }
+    },
+    {
+      "museo": "Museo F\u00e9lix Ca\u00f1ada",
+      "Estaci\u00f3n 1": {
+        "Nombre": "Cuatro Caminos",
+        "Valor": 14986.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      }
+    },
+    {
+      "museo": "Museo Geominero",
+      "Estaci\u00f3n 1": {
+        "Nombre": "Cuatro Caminos",
+        "Valor": 14986.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      }
+    },
+    {
+      "museo": "Museo Hist\u00f3rico Minero Don Felipe de Borb\u00f3n y Grecia",
+      "Estaci\u00f3n 1": {
+        "Nombre": "Cuatro Caminos",
+        "Valor": 14986.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      }
+    },
+    {
+      "museo": "Museo ICO",
+      "Estaci\u00f3n 1": {
+        "Nombre": "Pza. del Carmen",
+        "Valor": 14542.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      }
+    },
+    {
+      "museo": "Museo Los Ca\u00f1os del Peral. Estaci\u00f3n de Metro \u00d3pera",
+      "Estaci\u00f3n 1": {
+        "Nombre": "Pza. del Carmen",
+        "Valor": 14542.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      }
+    },
+    {
+      "museo": "Museo L\u00e1zaro Galdiano",
+      "Estaci\u00f3n 1": {
+        "Nombre": "Castellana",
+        "Valor": 11604.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      }
+    },
+    {
+      "museo": "Museo Nacional Centro de Arte Reina Sof\u00eda (MNCARS)",
+      "Estaci\u00f3n 1": {
+        "Nombre": "Parque del Retiro",
+        "Valor": 14941.0,
+        "Tipo": "Ozono"
+      }
+    },
+    {
+      "museo": "Museo Nacional Thyssen-Bornemisza",
+      "Estaci\u00f3n 1": {
+        "Nombre": "Pza. del Carmen",
+        "Valor": 14542.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      }
+    },
+    {
+      "museo": "Museo Nacional de Antropolog\u00eda",
+      "Estaci\u00f3n 1": {
+        "Nombre": "Parque del Retiro",
+        "Valor": 14941.0,
+        "Tipo": "Ozono"
+      }
+    },
+    {
+      "museo": "Museo Nacional de Artes Decorativas",
+      "Estaci\u00f3n 1": {
+        "Nombre": "Parque del Retiro",
+        "Valor": 14941.0,
+        "Tipo": "Ozono"
+      }
+    },
+    {
+      "museo": "Museo Nacional de Ciencias Naturales",
+      "Estaci\u00f3n 1": {
+        "Nombre": "Castellana",
+        "Valor": 11604.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      }
+    },
+    {
+      "museo": "Museo Naval",
+      "Estaci\u00f3n 1": {
+        "Nombre": "Pza. del Carmen",
+        "Valor": 14542.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      }
+    },
+    {
+      "museo": "Museo Postal y Telegr\u00e1fico",
+      "Estaci\u00f3n 1": {
+        "Nombre": "Barrio del Pilar",
+        "Valor": 15536.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      }
+    },
+    {
+      "museo": "Museo Sorolla",
+      "Estaci\u00f3n 1": {
+        "Nombre": "Castellana",
+        "Valor": 11604.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      }
+    },
+    {
+      "museo": "Museo Taurino de la Comunidad de Madrid",
+      "Estaci\u00f3n 1": {
+        "Nombre": "Escuelas Aguirre",
+        "Valor": 19486.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      }
+    },
+    {
+      "museo": "Museo Tiflol\u00f3gico",
+      "Estaci\u00f3n 1": {
+        "Nombre": "Cuatro Caminos",
+        "Valor": 14986.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      }
+    },
+    {
+      "museo": "Museo de Aeron\u00e1utica y Astron\u00e1utica",
+      "Estaci\u00f3n 1": {
+        "Nombre": "Farolillo",
+        "Valor": 15462.0,
+        "Tipo": "Ozono"
+      }
+    },
+    {
+      "museo": "Museo de Am\u00e9rica",
+      "Estaci\u00f3n 1": {
+        "Nombre": "Cuatro Caminos",
+        "Valor": 14986.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      }
+    },
+    {
+      "museo": "Museo de Arte Contempor\u00e1neo de Madrid",
+      "Estaci\u00f3n 1": {
+        "Nombre": "Pza. de Espa\u00f1a",
+        "Valor": 20147.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      }
+    },
+    {
+      "museo": "Museo de Artes y Tradiciones Populares. Centro Cultural La Corrala",
+      "Estaci\u00f3n 1": {
+        "Nombre": "Pza. del Carmen",
+        "Valor": 14542.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      }
+    },
+    {
+      "museo": "Museo de Astronom\u00eda y Geodesia",
+      "Estaci\u00f3n 1": {
+        "Nombre": "Cuatro Caminos",
+        "Valor": 14986.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      }
+    },
+    {
+      "museo": "Museo de Bomberos",
+      "Estaci\u00f3n 1": {
+        "Nombre": "Vallecas",
+        "Valor": 13080.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      }
+    },
+    {
+      "museo": "Museo de Calcograf\u00eda Nacional",
+      "Estaci\u00f3n 1": {
+        "Nombre": "Pza. del Carmen",
+        "Valor": 14542.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      }
+    },
+    {
+      "museo": "Museo de Cera",
+      "Estaci\u00f3n 1": {
+        "Nombre": "Escuelas Aguirre",
+        "Valor": 19486.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      }
+    },
+    {
+      "museo": "Museo de Escultura al Aire Libre de la Castellana",
+      "Estaci\u00f3n 1": {
+        "Nombre": "Castellana",
+        "Valor": 11604.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      }
+    },
+    {
+      "museo": "Museo de Historia de Madrid",
+      "Estaci\u00f3n 1": {
+        "Nombre": "Pza. del Carmen",
+        "Valor": 14542.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      }
+    },
+    {
+      "museo": "Museo de Historia de la Comunidad Jud\u00eda de Madrid",
+      "Estaci\u00f3n 1": {
+        "Nombre": "Castellana",
+        "Valor": 11604.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      }
+    },
+    {
+      "museo": "Museo de San Isidro. Los Or\u00edgenes de Madrid",
+      "Estaci\u00f3n 1": {
+        "Nombre": "Pza. del Carmen",
+        "Valor": 14542.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      }
+    },
+    {
+      "museo": "Museo de Sanidad e Higiene P\u00fablica",
+      "Estaci\u00f3n 1": {
+        "Nombre": "Plaza Castilla",
+        "Valor": 14454.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      }
+    },
+    {
+      "museo": "Museo de la Biblioteca Nacional de Espa\u00f1a",
+      "Estaci\u00f3n 1": {
+        "Nombre": "Escuelas Aguirre",
+        "Valor": 19486.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      }
+    },
+    {
+      "museo": "Museo de la Catedral de la Almudena",
+      "Estaci\u00f3n 1": {
+        "Nombre": "Pza. de Espa\u00f1a",
+        "Valor": 20147.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      }
+    },
+    {
+      "museo": "Museo de la Farmacia Hispana",
+      "Estaci\u00f3n 1": {
+        "Nombre": "Cuatro Caminos",
+        "Valor": 14986.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      }
+    },
+    {
+      "museo": "Museo de la Guardia Civil",
+      "Estaci\u00f3n 1": {
+        "Nombre": "Cuatro Caminos",
+        "Valor": 14986.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      }
+    },
+    {
+      "museo": "Museo de la Real Academia de Bellas Artes de San Fernando",
+      "Estaci\u00f3n 1": {
+        "Nombre": "Pza. del Carmen",
+        "Valor": 14542.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      }
+    },
+    {
+      "museo": "Museo del Ferrocarril de Madrid",
+      "Estaci\u00f3n 1": {
+        "Nombre": "Mendez Alvaro",
+        "Valor": 12838.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      }
+    },
+    {
+      "museo": "Museo del Prado",
+      "Estaci\u00f3n 1": {
+        "Nombre": "Parque del Retiro",
+        "Valor": 14941.0,
+        "Tipo": "Ozono"
+      }
+    },
+    {
+      "museo": "Museo del Reloj Grassy",
+      "Estaci\u00f3n 1": {
+        "Nombre": "Pza. del Carmen",
+        "Valor": 14542.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      }
+    },
+    {
+      "museo": "Museo del Romanticismo",
+      "Estaci\u00f3n 1": {
+        "Nombre": "Pza. del Carmen",
+        "Valor": 14542.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      }
+    },
+    {
+      "museo": "Museo del Seguro. Fundaci\u00f3n Mapfre",
+      "Estaci\u00f3n 1": {
+        "Nombre": "Escuelas Aguirre",
+        "Valor": 19486.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      }
+    },
+    {
+      "museo": "Museo del Traje. Centro de Investigaci\u00f3n del Patrimonio Etnol\u00f3gico (CIPE)",
+      "Estaci\u00f3n 1": {
+        "Nombre": "Cuatro Caminos",
+        "Valor": 14986.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      }
+    },
+    {
+      "museo": "Palacio Real de El Pardo",
+      "Estaci\u00f3n 1": {
+        "Nombre": "El Pardo",
+        "Valor": 16015.0,
+        "Tipo": "Ozono"
+      }
+    },
+    {
+      "museo": "Palacio Real de Madrid",
+      "Estaci\u00f3n 1": {
+        "Nombre": "Pza. de Espa\u00f1a",
+        "Valor": 20147.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      }
+    },
+    {
+      "museo": "Pante\u00f3n de Hombres Ilustres",
+      "Estaci\u00f3n 1": {
+        "Nombre": "Parque del Retiro",
+        "Valor": 14941.0,
+        "Tipo": "Ozono"
+      }
+    },
+    {
+      "museo": "Parroquia Santa Cruz",
+      "Estaci\u00f3n 1": {
+        "Nombre": "Pza. del Carmen",
+        "Valor": 14542.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      }
+    },
+    {
+      "museo": "Planetario de Madrid",
+      "Estaci\u00f3n 1": {
+        "Nombre": "Mendez Alvaro",
+        "Valor": 12838.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      }
+    },
+    {
+      "museo": "Real Bas\u00edlica San Francisco el Grande",
+      "Estaci\u00f3n 1": {
+        "Nombre": "Pza. del Carmen",
+        "Valor": 14542.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      }
+    },
+    {
+      "museo": "Real F\u00e1brica de Tapices",
+      "Estaci\u00f3n 1": {
+        "Nombre": "Parque del Retiro",
+        "Valor": 14941.0,
+        "Tipo": "Ozono"
+      }
+    },
+    {
+      "museo": "Real Monasterio de Santa Isabel",
+      "Estaci\u00f3n 1": {
+        "Nombre": "Pza. del Carmen",
+        "Valor": 14542.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      }
+    },
+    {
+      "museo": "Real Monasterio de la Encarnaci\u00f3n",
+      "Estaci\u00f3n 1": {
+        "Nombre": "Pza. de Espa\u00f1a",
+        "Valor": 20147.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      }
+    },
+    {
+      "museo": "Templo de Debod",
+      "Estaci\u00f3n 1": {
+        "Nombre": "Pza. de Espa\u00f1a",
+        "Valor": 20147.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      }
+    },
+    {
+      "museo": "The Robot Museum (Museo del Robot)",
+      "Estaci\u00f3n 1": {
+        "Nombre": "Pza. de Espa\u00f1a",
+        "Valor": 20147.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      }
+    },
+    {
+      "museo": "Yacimiento paleontol\u00f3gico. Estaci\u00f3n de Metro Carpetana",
+      "Estaci\u00f3n 1": {
+        "Nombre": "Farolillo",
+        "Valor": 15462.0,
+        "Tipo": "Ozono"
+      }
+    },
+    {
+      "museo": "Zapadores Ciudad del Arte. Museo Siglo XXI",
+      "Estaci\u00f3n 1": {
+        "Nombre": "Tres Olivos",
+        "Valor": 16864.0,
+        "Tipo": "Ozono"
+      }
+    }
+  ]
 }
