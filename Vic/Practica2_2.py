@@ -79,10 +79,10 @@ def presentar_datos(estaciones, valores, museos):
 
         estacion1 = min(item for item in distancias)
 
-        datos["Estación 1"]=dict()
-        datos["Estación 1"]["Nombre"]=estacion1[1]
-        datos["Estación 1"]["Valor"]=valores[estacion1[1]]["Valor"]
-        datos["Estación 1"]["Tipo"]=valores[estacion1[1]]["Tipo"]
+        datos["Estación 1"] = dict()
+        datos["Estación 1"]["Nombre"] = estacion1[1]
+        datos["Estación 1"]["Valor"] = valores[estacion1[1]]["Valor"]
+        datos["Estación 1"]["Tipo"] = valores[estacion1[1]]["Tipo"]
 
         listaMuseos.append(datos)
 
@@ -96,48 +96,3 @@ estaciones = leer_estaciones()
 museos = leer_museos()
 valores = leer_valores()
 presentar_datos(estaciones, valores, museos)
-
-
-# {
-#   "año": 2019,
-#   "fuente": "Ayuntamiento de Madrid",
-#   "museos": [
-#     {
-#       "museo": "Museo xxxx",
-#       "Estación 1": {
-#         "Nombre": "Estación X",
-#         "Valor": XX,
-#         "Tipo":TipoContaminante
-#       },
-#       "Estación 2": {
-#         "Nombre": "Estación Y",
-#         "Valor": XX,
-#         "Tipo":TipoContaminante
-#       },
-#       "Estación 3": {
-#         "Nombre": "Estación Z",
-#         "Valor": XX,
-#         "Tipo":TipoContaminante
-#       }
-#     },
-#     ...
-#     {
-#       "museo": "Museo xxxx",
-#       "Estación 1": {
-#         "Nombre": "Estación X",
-#         "Valor": XX,
-#         "Tipo":TipoContaminante
-#       },
-#       "Estación 2": {
-#         "Nombre": "Estación Y",
-#         "Valor": XX,
-#         "Tipo":TipoContaminante
-#       },
-#       "Estación 3": {
-#         "Nombre": "Estación Z",
-#         "Valor": XX,
-#         "Tipo":TipoContaminante
-#       }
-#     }
-#   ]
-# }
