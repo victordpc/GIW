@@ -48,8 +48,8 @@ def procesar_datos():
 
 def presentar_datos(datos):
 
-    with open('Salida.csv', 'w') as destino:
-        salida = csv.writer(destino)
+    with open('Salida.csv', 'w', encoding='utf8') as destino:
+        salida = csv.writer(destino,delimiter=';')
 
         # Cabecera
         cabecera=['Estación']
