@@ -45,8 +45,25 @@ def procesar_datos():
             datos[estacion][magnitud] = valor
     return datos
 
-
 def presentar_datos(datos):
+    # Cabecera
+    cabecera='Estación'
+    for contaminanteM in medidas.values():
+        cabecera=cabecera+'\t'+contaminanteM
+    print(cabecera)
+
+    for estacion in datos:
+        datosSalida = estaciones[estacion]
+
+        for valor in medidas.keys():
+            if valor in datos[estacion]:
+                datosSalida=datosSalida+'\t'+str(datos[estacion][valor])
+            else:
+                datosSalida=datosSalida+'\t'+'---'
+        print(datosSalida)
+
+
+def grabar_fichero(datos):
 
     with open('Salida.csv', 'w', encoding='utf8') as destino:
         salida = csv.writer(destino,delimiter=';')
@@ -55,14 +72,16 @@ def presentar_datos(datos):
         cabecera=['Estación']
         for contaminanteM in medidas.values():
             cabecera.append(contaminanteM)
+            cabecera.append("Valor")
         salida.writerow(cabecera)
 
         for estacion in datos:
             datosSalida = [estaciones[estacion]]
 
-            for valor in medidas.keys():
-                if valor in datos[estacion]:
-                    datosSalida.append(datos[estacion][valor])
+            for clave,valor in medidas.items():
+                datosSalida.append(valor)
+                if clave in datos[estacion]:
+                    datosSalida.append(datos[estacion][clave])
                 else:
                     datosSalida.append('---')
             salida.writerow(datosSalida)
@@ -71,3 +90,4 @@ def presentar_datos(datos):
 estaciones = leer_estaciones()
 datos = procesar_datos()
 presentar_datos(datos)
+grabar_fichero(datos)
