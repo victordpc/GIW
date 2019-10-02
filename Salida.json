@@ -8,6 +8,16 @@
         "Nombre": "Pza. del Carmen",
         "Valor": 14542.0,
         "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      },
+      "Estaci\u00f3n 2": {
+        "Nombre": "Parque del Retiro",
+        "Valor": 14941.0,
+        "Tipo": "Ozono"
+      },
+      "Estaci\u00f3n 3": {
+        "Nombre": "Escuelas Aguirre",
+        "Valor": 19486.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
       }
     },
     {
@@ -16,6 +26,16 @@
         "Nombre": "Pza. del Carmen",
         "Valor": 14542.0,
         "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      },
+      "Estaci\u00f3n 2": {
+        "Nombre": "Pza. de Espa\u00f1a",
+        "Valor": 20147.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      },
+      "Estaci\u00f3n 3": {
+        "Nombre": "Parque del Retiro",
+        "Valor": 14941.0,
+        "Tipo": "Ozono"
       }
     },
     {
@@ -24,6 +44,16 @@
         "Nombre": "Urb. Embajada",
         "Valor": 15638.0,
         "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      },
+      "Estaci\u00f3n 2": {
+        "Nombre": "Juan Carlos I",
+        "Valor": 14401.0,
+        "Tipo": "Ozono"
+      },
+      "Estaci\u00f3n 3": {
+        "Nombre": "Barajas Pueblo",
+        "Valor": 14392.0,
+        "Tipo": "Ozono"
       }
     },
     {
@@ -32,6 +62,16 @@
         "Nombre": "Parque del Retiro",
         "Valor": 14941.0,
         "Tipo": "Ozono"
+      },
+      "Estaci\u00f3n 2": {
+        "Nombre": "Escuelas Aguirre",
+        "Valor": 19486.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      },
+      "Estaci\u00f3n 3": {
+        "Nombre": "Pza. del Carmen",
+        "Valor": 14542.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
       }
     },
     {
@@ -40,6 +80,16 @@
         "Nombre": "Mendez Alvaro",
         "Valor": 12838.0,
         "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      },
+      "Estaci\u00f3n 2": {
+        "Nombre": "Pza. del Carmen",
+        "Valor": 14542.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      },
+      "Estaci\u00f3n 3": {
+        "Nombre": "Parque del Retiro",
+        "Valor": 14941.0,
+        "Tipo": "Ozono"
       }
     },
     {
@@ -47,6 +97,16 @@
       "Estaci\u00f3n 1": {
         "Nombre": "Pza. de Espa\u00f1a",
         "Valor": 20147.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      },
+      "Estaci\u00f3n 2": {
+        "Nombre": "Casa de Campo",
+        "Valor": 16209.0,
+        "Tipo": "Ozono"
+      },
+      "Estaci\u00f3n 3": {
+        "Nombre": "Pza. del Carmen",
+        "Valor": 14542.0,
         "Tipo": "\u00d3xidos de Nitr\u00f3geno"
       }
     },
@@ -56,6 +116,16 @@
         "Nombre": "Pza. del Carmen",
         "Valor": 14542.0,
         "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      },
+      "Estaci\u00f3n 2": {
+        "Nombre": "Pza. de Espa\u00f1a",
+        "Valor": 20147.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      },
+      "Estaci\u00f3n 3": {
+        "Nombre": "Escuelas Aguirre",
+        "Valor": 19486.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
       }
     },
     {
@@ -64,6 +134,16 @@
         "Nombre": "Casa de Campo",
         "Valor": 16209.0,
         "Tipo": "Ozono"
+      },
+      "Estaci\u00f3n 2": {
+        "Nombre": "Cuatro Caminos",
+        "Valor": 14986.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      },
+      "Estaci\u00f3n 3": {
+        "Nombre": "Barrio del Pilar",
+        "Valor": 15536.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
       }
     },
     {
@@ -72,6 +152,16 @@
         "Nombre": "Pza. del Carmen",
         "Valor": 14542.0,
         "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      },
+      "Estaci\u00f3n 2": {
+        "Nombre": "Pza. de Espa\u00f1a",
+        "Valor": 20147.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      },
+      "Estaci\u00f3n 3": {
+        "Nombre": "Parque del Retiro",
+        "Valor": 14941.0,
+        "Tipo": "Ozono"
       }
     },
     {
@@ -79,6 +169,16 @@
       "Estaci\u00f3n 1": {
         "Nombre": "Pza. de Espa\u00f1a",
         "Valor": 20147.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      },
+      "Estaci\u00f3n 2": {
+        "Nombre": "Pza. del Carmen",
+        "Valor": 14542.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      },
+      "Estaci\u00f3n 3": {
+        "Nombre": "Cuatro Caminos",
+        "Valor": 14986.0,
         "Tipo": "\u00d3xidos de Nitr\u00f3geno"
       }
     },
@@ -88,6 +188,16 @@
         "Nombre": "Arturo Soria",
         "Valor": 12195.0,
         "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      },
+      "Estaci\u00f3n 2": {
+        "Nombre": "Avda. Ram\u00f3n y Cajal",
+        "Valor": 14549.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      },
+      "Estaci\u00f3n 3": {
+        "Nombre": "Juan Carlos I",
+        "Valor": 14401.0,
+        "Tipo": "Ozono"
       }
     },
     {
@@ -95,6 +205,16 @@
       "Estaci\u00f3n 1": {
         "Nombre": "Escuelas Aguirre",
         "Valor": 19486.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      },
+      "Estaci\u00f3n 2": {
+        "Nombre": "Parque del Retiro",
+        "Valor": 14941.0,
+        "Tipo": "Ozono"
+      },
+      "Estaci\u00f3n 3": {
+        "Nombre": "Pza. del Carmen",
+        "Valor": 14542.0,
         "Tipo": "\u00d3xidos de Nitr\u00f3geno"
       }
     },
@@ -104,6 +224,16 @@
         "Nombre": "Escuelas Aguirre",
         "Valor": 19486.0,
         "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      },
+      "Estaci\u00f3n 2": {
+        "Nombre": "Parque del Retiro",
+        "Valor": 14941.0,
+        "Tipo": "Ozono"
+      },
+      "Estaci\u00f3n 3": {
+        "Nombre": "Moratalaz",
+        "Valor": 13995.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
       }
     },
     {
@@ -111,6 +241,16 @@
       "Estaci\u00f3n 1": {
         "Nombre": "Pza. de Espa\u00f1a",
         "Valor": 20147.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      },
+      "Estaci\u00f3n 2": {
+        "Nombre": "Pza. del Carmen",
+        "Valor": 14542.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      },
+      "Estaci\u00f3n 3": {
+        "Nombre": "Cuatro Caminos",
+        "Valor": 14986.0,
         "Tipo": "\u00d3xidos de Nitr\u00f3geno"
       }
     },
@@ -120,6 +260,16 @@
         "Nombre": "Plaza Castilla",
         "Valor": 14454.0,
         "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      },
+      "Estaci\u00f3n 2": {
+        "Nombre": "Tres Olivos",
+        "Valor": 16864.0,
+        "Tipo": "Ozono"
+      },
+      "Estaci\u00f3n 3": {
+        "Nombre": "Barrio del Pilar",
+        "Valor": 15536.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
       }
     },
     {
@@ -127,6 +277,16 @@
       "Estaci\u00f3n 1": {
         "Nombre": "Cuatro Caminos",
         "Valor": 14986.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      },
+      "Estaci\u00f3n 2": {
+        "Nombre": "Castellana",
+        "Valor": 11604.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      },
+      "Estaci\u00f3n 3": {
+        "Nombre": "Avda. Ram\u00f3n y Cajal",
+        "Valor": 14549.0,
         "Tipo": "\u00d3xidos de Nitr\u00f3geno"
       }
     },
@@ -136,6 +296,16 @@
         "Nombre": "Cuatro Caminos",
         "Valor": 14986.0,
         "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      },
+      "Estaci\u00f3n 2": {
+        "Nombre": "Castellana",
+        "Valor": 11604.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      },
+      "Estaci\u00f3n 3": {
+        "Nombre": "Avda. Ram\u00f3n y Cajal",
+        "Valor": 14549.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
       }
     },
     {
@@ -143,6 +313,16 @@
       "Estaci\u00f3n 1": {
         "Nombre": "Cuatro Caminos",
         "Valor": 14986.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      },
+      "Estaci\u00f3n 2": {
+        "Nombre": "Castellana",
+        "Valor": 11604.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      },
+      "Estaci\u00f3n 3": {
+        "Nombre": "Avda. Ram\u00f3n y Cajal",
+        "Valor": 14549.0,
         "Tipo": "\u00d3xidos de Nitr\u00f3geno"
       }
     },
@@ -152,6 +332,16 @@
         "Nombre": "Pza. del Carmen",
         "Valor": 14542.0,
         "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      },
+      "Estaci\u00f3n 2": {
+        "Nombre": "Parque del Retiro",
+        "Valor": 14941.0,
+        "Tipo": "Ozono"
+      },
+      "Estaci\u00f3n 3": {
+        "Nombre": "Escuelas Aguirre",
+        "Valor": 19486.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
       }
     },
     {
@@ -160,6 +350,16 @@
         "Nombre": "Pza. del Carmen",
         "Valor": 14542.0,
         "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      },
+      "Estaci\u00f3n 2": {
+        "Nombre": "Pza. de Espa\u00f1a",
+        "Valor": 20147.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      },
+      "Estaci\u00f3n 3": {
+        "Nombre": "Parque del Retiro",
+        "Valor": 14941.0,
+        "Tipo": "Ozono"
       }
     },
     {
@@ -167,6 +367,16 @@
       "Estaci\u00f3n 1": {
         "Nombre": "Castellana",
         "Valor": 11604.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      },
+      "Estaci\u00f3n 2": {
+        "Nombre": "Escuelas Aguirre",
+        "Valor": 19486.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      },
+      "Estaci\u00f3n 3": {
+        "Nombre": "Avda. Ram\u00f3n y Cajal",
+        "Valor": 14549.0,
         "Tipo": "\u00d3xidos de Nitr\u00f3geno"
       }
     },
@@ -176,6 +386,16 @@
         "Nombre": "Parque del Retiro",
         "Valor": 14941.0,
         "Tipo": "Ozono"
+      },
+      "Estaci\u00f3n 2": {
+        "Nombre": "Mendez Alvaro",
+        "Valor": 12838.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      },
+      "Estaci\u00f3n 3": {
+        "Nombre": "Pza. del Carmen",
+        "Valor": 14542.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
       }
     },
     {
@@ -183,6 +403,16 @@
       "Estaci\u00f3n 1": {
         "Nombre": "Pza. del Carmen",
         "Valor": 14542.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      },
+      "Estaci\u00f3n 2": {
+        "Nombre": "Parque del Retiro",
+        "Valor": 14941.0,
+        "Tipo": "Ozono"
+      },
+      "Estaci\u00f3n 3": {
+        "Nombre": "Escuelas Aguirre",
+        "Valor": 19486.0,
         "Tipo": "\u00d3xidos de Nitr\u00f3geno"
       }
     },
@@ -192,6 +422,16 @@
         "Nombre": "Parque del Retiro",
         "Valor": 14941.0,
         "Tipo": "Ozono"
+      },
+      "Estaci\u00f3n 2": {
+        "Nombre": "Mendez Alvaro",
+        "Valor": 12838.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      },
+      "Estaci\u00f3n 3": {
+        "Nombre": "Escuelas Aguirre",
+        "Valor": 19486.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
       }
     },
     {
@@ -200,6 +440,16 @@
         "Nombre": "Parque del Retiro",
         "Valor": 14941.0,
         "Tipo": "Ozono"
+      },
+      "Estaci\u00f3n 2": {
+        "Nombre": "Escuelas Aguirre",
+        "Valor": 19486.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      },
+      "Estaci\u00f3n 3": {
+        "Nombre": "Pza. del Carmen",
+        "Valor": 14542.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
       }
     },
     {
@@ -207,6 +457,16 @@
       "Estaci\u00f3n 1": {
         "Nombre": "Castellana",
         "Valor": 11604.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      },
+      "Estaci\u00f3n 2": {
+        "Nombre": "Cuatro Caminos",
+        "Valor": 14986.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      },
+      "Estaci\u00f3n 3": {
+        "Nombre": "Avda. Ram\u00f3n y Cajal",
+        "Valor": 14549.0,
         "Tipo": "\u00d3xidos de Nitr\u00f3geno"
       }
     },
@@ -216,6 +476,16 @@
         "Nombre": "Pza. del Carmen",
         "Valor": 14542.0,
         "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      },
+      "Estaci\u00f3n 2": {
+        "Nombre": "Parque del Retiro",
+        "Valor": 14941.0,
+        "Tipo": "Ozono"
+      },
+      "Estaci\u00f3n 3": {
+        "Nombre": "Escuelas Aguirre",
+        "Valor": 19486.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
       }
     },
     {
@@ -224,6 +494,16 @@
         "Nombre": "Barrio del Pilar",
         "Valor": 15536.0,
         "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      },
+      "Estaci\u00f3n 2": {
+        "Nombre": "El Pardo",
+        "Valor": 16015.0,
+        "Tipo": "Ozono"
+      },
+      "Estaci\u00f3n 3": {
+        "Nombre": "Casa de Campo",
+        "Valor": 16209.0,
+        "Tipo": "Ozono"
       }
     },
     {
@@ -231,6 +511,16 @@
       "Estaci\u00f3n 1": {
         "Nombre": "Castellana",
         "Valor": 11604.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      },
+      "Estaci\u00f3n 2": {
+        "Nombre": "Cuatro Caminos",
+        "Valor": 14986.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      },
+      "Estaci\u00f3n 3": {
+        "Nombre": "Escuelas Aguirre",
+        "Valor": 19486.0,
         "Tipo": "\u00d3xidos de Nitr\u00f3geno"
       }
     },
@@ -240,6 +530,16 @@
         "Nombre": "Escuelas Aguirre",
         "Valor": 19486.0,
         "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      },
+      "Estaci\u00f3n 2": {
+        "Nombre": "Arturo Soria",
+        "Valor": 12195.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      },
+      "Estaci\u00f3n 3": {
+        "Nombre": "Castellana",
+        "Valor": 11604.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
       }
     },
     {
@@ -247,6 +547,16 @@
       "Estaci\u00f3n 1": {
         "Nombre": "Cuatro Caminos",
         "Valor": 14986.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      },
+      "Estaci\u00f3n 2": {
+        "Nombre": "Plaza Castilla",
+        "Valor": 14454.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      },
+      "Estaci\u00f3n 3": {
+        "Nombre": "Castellana",
+        "Valor": 11604.0,
         "Tipo": "\u00d3xidos de Nitr\u00f3geno"
       }
     },
@@ -256,6 +566,16 @@
         "Nombre": "Farolillo",
         "Valor": 15462.0,
         "Tipo": "Ozono"
+      },
+      "Estaci\u00f3n 2": {
+        "Nombre": "Casa de Campo",
+        "Valor": 16209.0,
+        "Tipo": "Ozono"
+      },
+      "Estaci\u00f3n 3": {
+        "Nombre": "Pza. El\u00edptica",
+        "Valor": 27888.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
       }
     },
     {
@@ -263,6 +583,16 @@
       "Estaci\u00f3n 1": {
         "Nombre": "Cuatro Caminos",
         "Valor": 14986.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      },
+      "Estaci\u00f3n 2": {
+        "Nombre": "Pza. de Espa\u00f1a",
+        "Valor": 20147.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      },
+      "Estaci\u00f3n 3": {
+        "Nombre": "Pza. del Carmen",
+        "Valor": 14542.0,
         "Tipo": "\u00d3xidos de Nitr\u00f3geno"
       }
     },
@@ -272,6 +602,16 @@
         "Nombre": "Pza. de Espa\u00f1a",
         "Valor": 20147.0,
         "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      },
+      "Estaci\u00f3n 2": {
+        "Nombre": "Pza. del Carmen",
+        "Valor": 14542.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      },
+      "Estaci\u00f3n 3": {
+        "Nombre": "Cuatro Caminos",
+        "Valor": 14986.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
       }
     },
     {
@@ -279,6 +619,16 @@
       "Estaci\u00f3n 1": {
         "Nombre": "Pza. del Carmen",
         "Valor": 14542.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      },
+      "Estaci\u00f3n 2": {
+        "Nombre": "Pza. de Espa\u00f1a",
+        "Valor": 20147.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      },
+      "Estaci\u00f3n 3": {
+        "Nombre": "Mendez Alvaro",
+        "Valor": 12838.0,
         "Tipo": "\u00d3xidos de Nitr\u00f3geno"
       }
     },
@@ -288,6 +638,16 @@
         "Nombre": "Cuatro Caminos",
         "Valor": 14986.0,
         "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      },
+      "Estaci\u00f3n 2": {
+        "Nombre": "Pza. de Espa\u00f1a",
+        "Valor": 20147.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      },
+      "Estaci\u00f3n 3": {
+        "Nombre": "Castellana",
+        "Valor": 11604.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
       }
     },
     {
@@ -295,6 +655,16 @@
       "Estaci\u00f3n 1": {
         "Nombre": "Vallecas",
         "Valor": 13080.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      },
+      "Estaci\u00f3n 2": {
+        "Nombre": "Moratalaz",
+        "Valor": 13995.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      },
+      "Estaci\u00f3n 3": {
+        "Nombre": "Mendez Alvaro",
+        "Valor": 12838.0,
         "Tipo": "\u00d3xidos de Nitr\u00f3geno"
       }
     },
@@ -304,6 +674,16 @@
         "Nombre": "Pza. del Carmen",
         "Valor": 14542.0,
         "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      },
+      "Estaci\u00f3n 2": {
+        "Nombre": "Pza. de Espa\u00f1a",
+        "Valor": 20147.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      },
+      "Estaci\u00f3n 3": {
+        "Nombre": "Parque del Retiro",
+        "Valor": 14941.0,
+        "Tipo": "Ozono"
       }
     },
     {
@@ -312,6 +692,16 @@
         "Nombre": "Escuelas Aguirre",
         "Valor": 19486.0,
         "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      },
+      "Estaci\u00f3n 2": {
+        "Nombre": "Pza. del Carmen",
+        "Valor": 14542.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      },
+      "Estaci\u00f3n 3": {
+        "Nombre": "Parque del Retiro",
+        "Valor": 14941.0,
+        "Tipo": "Ozono"
       }
     },
     {
@@ -319,6 +709,16 @@
       "Estaci\u00f3n 1": {
         "Nombre": "Castellana",
         "Valor": 11604.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      },
+      "Estaci\u00f3n 2": {
+        "Nombre": "Escuelas Aguirre",
+        "Valor": 19486.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      },
+      "Estaci\u00f3n 3": {
+        "Nombre": "Pza. del Carmen",
+        "Valor": 14542.0,
         "Tipo": "\u00d3xidos de Nitr\u00f3geno"
       }
     },
@@ -328,6 +728,16 @@
         "Nombre": "Pza. del Carmen",
         "Valor": 14542.0,
         "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      },
+      "Estaci\u00f3n 2": {
+        "Nombre": "Pza. de Espa\u00f1a",
+        "Valor": 20147.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      },
+      "Estaci\u00f3n 3": {
+        "Nombre": "Escuelas Aguirre",
+        "Valor": 19486.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
       }
     },
     {
@@ -335,6 +745,16 @@
       "Estaci\u00f3n 1": {
         "Nombre": "Castellana",
         "Valor": 11604.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      },
+      "Estaci\u00f3n 2": {
+        "Nombre": "Cuatro Caminos",
+        "Valor": 14986.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      },
+      "Estaci\u00f3n 3": {
+        "Nombre": "Pza. de Espa\u00f1a",
+        "Valor": 20147.0,
         "Tipo": "\u00d3xidos de Nitr\u00f3geno"
       }
     },
@@ -344,6 +764,16 @@
         "Nombre": "Pza. del Carmen",
         "Valor": 14542.0,
         "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      },
+      "Estaci\u00f3n 2": {
+        "Nombre": "Pza. de Espa\u00f1a",
+        "Valor": 20147.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      },
+      "Estaci\u00f3n 3": {
+        "Nombre": "Parque del Retiro",
+        "Valor": 14941.0,
+        "Tipo": "Ozono"
       }
     },
     {
@@ -352,6 +782,16 @@
         "Nombre": "Plaza Castilla",
         "Valor": 14454.0,
         "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      },
+      "Estaci\u00f3n 2": {
+        "Nombre": "Barrio del Pilar",
+        "Valor": 15536.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      },
+      "Estaci\u00f3n 3": {
+        "Nombre": "Tres Olivos",
+        "Valor": 16864.0,
+        "Tipo": "Ozono"
       }
     },
     {
@@ -360,6 +800,16 @@
         "Nombre": "Escuelas Aguirre",
         "Valor": 19486.0,
         "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      },
+      "Estaci\u00f3n 2": {
+        "Nombre": "Pza. del Carmen",
+        "Valor": 14542.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      },
+      "Estaci\u00f3n 3": {
+        "Nombre": "Parque del Retiro",
+        "Valor": 14941.0,
+        "Tipo": "Ozono"
       }
     },
     {
@@ -368,6 +818,16 @@
         "Nombre": "Pza. de Espa\u00f1a",
         "Valor": 20147.0,
         "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      },
+      "Estaci\u00f3n 2": {
+        "Nombre": "Pza. del Carmen",
+        "Valor": 14542.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      },
+      "Estaci\u00f3n 3": {
+        "Nombre": "Parque del Retiro",
+        "Valor": 14941.0,
+        "Tipo": "Ozono"
       }
     },
     {
@@ -375,6 +835,16 @@
       "Estaci\u00f3n 1": {
         "Nombre": "Cuatro Caminos",
         "Valor": 14986.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      },
+      "Estaci\u00f3n 2": {
+        "Nombre": "Pza. de Espa\u00f1a",
+        "Valor": 20147.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      },
+      "Estaci\u00f3n 3": {
+        "Nombre": "Castellana",
+        "Valor": 11604.0,
         "Tipo": "\u00d3xidos de Nitr\u00f3geno"
       }
     },
@@ -384,6 +854,16 @@
         "Nombre": "Cuatro Caminos",
         "Valor": 14986.0,
         "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      },
+      "Estaci\u00f3n 2": {
+        "Nombre": "Castellana",
+        "Valor": 11604.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      },
+      "Estaci\u00f3n 3": {
+        "Nombre": "Pza. de Espa\u00f1a",
+        "Valor": 20147.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
       }
     },
     {
@@ -392,6 +872,16 @@
         "Nombre": "Pza. del Carmen",
         "Valor": 14542.0,
         "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      },
+      "Estaci\u00f3n 2": {
+        "Nombre": "Pza. de Espa\u00f1a",
+        "Valor": 20147.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      },
+      "Estaci\u00f3n 3": {
+        "Nombre": "Parque del Retiro",
+        "Valor": 14941.0,
+        "Tipo": "Ozono"
       }
     },
     {
@@ -399,6 +889,16 @@
       "Estaci\u00f3n 1": {
         "Nombre": "Mendez Alvaro",
         "Valor": 12838.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      },
+      "Estaci\u00f3n 2": {
+        "Nombre": "Parque del Retiro",
+        "Valor": 14941.0,
+        "Tipo": "Ozono"
+      },
+      "Estaci\u00f3n 3": {
+        "Nombre": "Pza. del Carmen",
+        "Valor": 14542.0,
         "Tipo": "\u00d3xidos de Nitr\u00f3geno"
       }
     },
@@ -408,6 +908,16 @@
         "Nombre": "Parque del Retiro",
         "Valor": 14941.0,
         "Tipo": "Ozono"
+      },
+      "Estaci\u00f3n 2": {
+        "Nombre": "Escuelas Aguirre",
+        "Valor": 19486.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      },
+      "Estaci\u00f3n 3": {
+        "Nombre": "Pza. del Carmen",
+        "Valor": 14542.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
       }
     },
     {
@@ -415,6 +925,16 @@
       "Estaci\u00f3n 1": {
         "Nombre": "Pza. del Carmen",
         "Valor": 14542.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      },
+      "Estaci\u00f3n 2": {
+        "Nombre": "Pza. de Espa\u00f1a",
+        "Valor": 20147.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      },
+      "Estaci\u00f3n 3": {
+        "Nombre": "Escuelas Aguirre",
+        "Valor": 19486.0,
         "Tipo": "\u00d3xidos de Nitr\u00f3geno"
       }
     },
@@ -424,6 +944,16 @@
         "Nombre": "Pza. del Carmen",
         "Valor": 14542.0,
         "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      },
+      "Estaci\u00f3n 2": {
+        "Nombre": "Pza. de Espa\u00f1a",
+        "Valor": 20147.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      },
+      "Estaci\u00f3n 3": {
+        "Nombre": "Escuelas Aguirre",
+        "Valor": 19486.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
       }
     },
     {
@@ -432,6 +962,16 @@
         "Nombre": "Escuelas Aguirre",
         "Valor": 19486.0,
         "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      },
+      "Estaci\u00f3n 2": {
+        "Nombre": "Pza. del Carmen",
+        "Valor": 14542.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      },
+      "Estaci\u00f3n 3": {
+        "Nombre": "Parque del Retiro",
+        "Valor": 14941.0,
+        "Tipo": "Ozono"
       }
     },
     {
@@ -440,6 +980,16 @@
         "Nombre": "Cuatro Caminos",
         "Valor": 14986.0,
         "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      },
+      "Estaci\u00f3n 2": {
+        "Nombre": "Pza. de Espa\u00f1a",
+        "Valor": 20147.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      },
+      "Estaci\u00f3n 3": {
+        "Nombre": "Casa de Campo",
+        "Valor": 16209.0,
+        "Tipo": "Ozono"
       }
     },
     {
@@ -447,6 +997,16 @@
       "Estaci\u00f3n 1": {
         "Nombre": "El Pardo",
         "Valor": 16015.0,
+        "Tipo": "Ozono"
+      },
+      "Estaci\u00f3n 2": {
+        "Nombre": "Barrio del Pilar",
+        "Valor": 15536.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      },
+      "Estaci\u00f3n 3": {
+        "Nombre": "Tres Olivos",
+        "Valor": 16864.0,
         "Tipo": "Ozono"
       }
     },
@@ -456,6 +1016,16 @@
         "Nombre": "Pza. de Espa\u00f1a",
         "Valor": 20147.0,
         "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      },
+      "Estaci\u00f3n 2": {
+        "Nombre": "Pza. del Carmen",
+        "Valor": 14542.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      },
+      "Estaci\u00f3n 3": {
+        "Nombre": "Escuelas Aguirre",
+        "Valor": 19486.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
       }
     },
     {
@@ -464,6 +1034,16 @@
         "Nombre": "Parque del Retiro",
         "Valor": 14941.0,
         "Tipo": "Ozono"
+      },
+      "Estaci\u00f3n 2": {
+        "Nombre": "Mendez Alvaro",
+        "Valor": 12838.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      },
+      "Estaci\u00f3n 3": {
+        "Nombre": "Escuelas Aguirre",
+        "Valor": 19486.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
       }
     },
     {
@@ -472,6 +1052,16 @@
         "Nombre": "Pza. del Carmen",
         "Valor": 14542.0,
         "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      },
+      "Estaci\u00f3n 2": {
+        "Nombre": "Pza. de Espa\u00f1a",
+        "Valor": 20147.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      },
+      "Estaci\u00f3n 3": {
+        "Nombre": "Parque del Retiro",
+        "Valor": 14941.0,
+        "Tipo": "Ozono"
       }
     },
     {
@@ -479,6 +1069,16 @@
       "Estaci\u00f3n 1": {
         "Nombre": "Mendez Alvaro",
         "Valor": 12838.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      },
+      "Estaci\u00f3n 2": {
+        "Nombre": "Parque del Retiro",
+        "Valor": 14941.0,
+        "Tipo": "Ozono"
+      },
+      "Estaci\u00f3n 3": {
+        "Nombre": "Vallecas",
+        "Valor": 13080.0,
         "Tipo": "\u00d3xidos de Nitr\u00f3geno"
       }
     },
@@ -488,6 +1088,16 @@
         "Nombre": "Pza. del Carmen",
         "Valor": 14542.0,
         "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      },
+      "Estaci\u00f3n 2": {
+        "Nombre": "Pza. de Espa\u00f1a",
+        "Valor": 20147.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      },
+      "Estaci\u00f3n 3": {
+        "Nombre": "Farolillo",
+        "Valor": 15462.0,
+        "Tipo": "Ozono"
       }
     },
     {
@@ -496,6 +1106,16 @@
         "Nombre": "Parque del Retiro",
         "Valor": 14941.0,
         "Tipo": "Ozono"
+      },
+      "Estaci\u00f3n 2": {
+        "Nombre": "Mendez Alvaro",
+        "Valor": 12838.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      },
+      "Estaci\u00f3n 3": {
+        "Nombre": "Escuelas Aguirre",
+        "Valor": 19486.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
       }
     },
     {
@@ -503,6 +1123,16 @@
       "Estaci\u00f3n 1": {
         "Nombre": "Pza. del Carmen",
         "Valor": 14542.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      },
+      "Estaci\u00f3n 2": {
+        "Nombre": "Parque del Retiro",
+        "Valor": 14941.0,
+        "Tipo": "Ozono"
+      },
+      "Estaci\u00f3n 3": {
+        "Nombre": "Pza. de Espa\u00f1a",
+        "Valor": 20147.0,
         "Tipo": "\u00d3xidos de Nitr\u00f3geno"
       }
     },
@@ -512,6 +1142,16 @@
         "Nombre": "Pza. de Espa\u00f1a",
         "Valor": 20147.0,
         "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      },
+      "Estaci\u00f3n 2": {
+        "Nombre": "Pza. del Carmen",
+        "Valor": 14542.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      },
+      "Estaci\u00f3n 3": {
+        "Nombre": "Escuelas Aguirre",
+        "Valor": 19486.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
       }
     },
     {
@@ -519,6 +1159,16 @@
       "Estaci\u00f3n 1": {
         "Nombre": "Pza. de Espa\u00f1a",
         "Valor": 20147.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      },
+      "Estaci\u00f3n 2": {
+        "Nombre": "Pza. del Carmen",
+        "Valor": 14542.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      },
+      "Estaci\u00f3n 3": {
+        "Nombre": "Cuatro Caminos",
+        "Valor": 14986.0,
         "Tipo": "\u00d3xidos de Nitr\u00f3geno"
       }
     },
@@ -528,6 +1178,16 @@
         "Nombre": "Pza. de Espa\u00f1a",
         "Valor": 20147.0,
         "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      },
+      "Estaci\u00f3n 2": {
+        "Nombre": "Pza. del Carmen",
+        "Valor": 14542.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      },
+      "Estaci\u00f3n 3": {
+        "Nombre": "Cuatro Caminos",
+        "Valor": 14986.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
       }
     },
     {
@@ -535,6 +1195,16 @@
       "Estaci\u00f3n 1": {
         "Nombre": "Farolillo",
         "Valor": 15462.0,
+        "Tipo": "Ozono"
+      },
+      "Estaci\u00f3n 2": {
+        "Nombre": "Pza. El\u00edptica",
+        "Valor": 27888.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      },
+      "Estaci\u00f3n 3": {
+        "Nombre": "Casa de Campo",
+        "Valor": 16209.0,
         "Tipo": "Ozono"
       }
     },
@@ -544,6 +1214,16 @@
         "Nombre": "Tres Olivos",
         "Valor": 16864.0,
         "Tipo": "Ozono"
+      },
+      "Estaci\u00f3n 2": {
+        "Nombre": "Sanchinarro",
+        "Valor": 11251.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
+      },
+      "Estaci\u00f3n 3": {
+        "Nombre": "Barrio del Pilar",
+        "Valor": 15536.0,
+        "Tipo": "\u00d3xidos de Nitr\u00f3geno"
       }
     }
   ]
