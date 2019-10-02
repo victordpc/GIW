@@ -69,12 +69,12 @@ def presentar_datos(estaciones, valores, museos):
     resultado["fuente"] = "Ayuntamiento de Madrid"
     listaMuseos = list()
 
-    #                   0                        80         16                 24           16                 24         16
+    #                   0                        80         16                 24         16                 24         16
     cabeceraPantalla = 'Museo\t\t\t\t\t\t\t\t\t\tEstacion1\tTipoContaminante1\tEstacion2\tTipoContaminante2\tEstacion3\tTipoContaminante3'
     print(cabeceraPantalla)
 
     cabeceraPantalla = ''
-    for i in range(224):
+    for i in range(194):
         cabeceraPantalla = cabeceraPantalla+'-'
     print(cabeceraPantalla)
 
@@ -153,3 +153,4 @@ estaciones = leer_estaciones()
 museos = leer_museos()
 valores = leer_valores()
 presentar_datos(estaciones, valores, museos)
+
