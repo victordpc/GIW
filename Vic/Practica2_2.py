@@ -69,8 +69,8 @@ def presentar_datos(estaciones, valores, museos):
     resultado["fuente"] = "Ayuntamiento de Madrid"
     listaMuseos = list()
 
-    #                   0                        80           24                 24           24                 24         16
-    cabeceraPantalla = 'Museo\t\t\t\t\t\t\t\t\t\tEstacion1\t\tTipoContaminante1\tEstacion2\t\tTipoContaminante2\tEstacion3\t\tTipoContaminante3'
+    #                   0                        80         16                 24           16                 24         16
+    cabeceraPantalla = 'Museo\t\t\t\t\t\t\t\t\t\tEstacion1\tTipoContaminante1\tEstacion2\tTipoContaminante2\tEstacion3\tTipoContaminante3'
     print(cabeceraPantalla)
 
     cabeceraPantalla = ''
@@ -92,21 +92,21 @@ def presentar_datos(estaciones, valores, museos):
         distancias = calcular_distancias(estaciones, museo)
 
         elemento = "Estación 1"
-        espacioEstacion = 24
+        espacioEstacion = 16
         espacioContaminante = 24
 
         lineaPantalla = agregar_linea(
             distancias, datos, elemento, valores, lineaPantalla, espacioEstacion, espacioContaminante)
 
         elemento = "Estación 2"
-        espacioEstacion = 24
+        espacioEstacion = 16
         espacioContaminante = 24
 
         lineaPantalla = agregar_linea(
             distancias, datos, elemento, valores, lineaPantalla, espacioEstacion, espacioContaminante)
 
         elemento = "Estación 3"
-        espacioEstacion = 24
+        espacioEstacion = 16
         espacioContaminante = 16
 
         lineaPantalla = agregar_linea(
@@ -137,9 +137,9 @@ def agregar_linea(distancias, datos, elemento, valores, lineaPantalla, espacioEs
     datos[elemento]["Valor"] = valores[estacion[1]]["Valor"]
     datos[elemento]["Tipo"] = valores[estacion[1]]["Tipo"]
 
-    lineaPantalla = lineaPantalla+estacion[1]
-    lineaPantalla = espaciado_tabla(
-        espacioEstacion, estacion[1], lineaPantalla)
+    lineaPantalla = lineaPantalla+str(valores[estacion[1]]["Valor"])
+    lineaPantalla = espaciado_tabla(espacioEstacion, str(
+        valores[estacion[1]]["Valor"]), lineaPantalla)
 
     lineaPantalla = lineaPantalla+valores[estacion[1]]["Tipo"]
     lineaPantalla = espaciado_tabla(
