@@ -1,15 +1,4 @@
-import urllib.request
 from xml.etree import ElementTree
-
-
-def obtenerDatos():
-    x = urllib.request.urlopen(
-        'https://datos.madrid.es/egob/catalogo/200761-0-parques-jardines.xml')
-    a = x.read()
-    a = a.decode("utf-8")
-
-    with open("catalogo.xml", "w", encoding="utf8") as catalogo:
-        catalogo.write(str(a))
 
 
 def procesar_XML():
@@ -32,27 +21,27 @@ def procesar_XML():
                         if direccion.text != None:
                             tipo_via = direccion.text.strip()+' '
                         else:
-                            tipo_via=''
+                            tipo_via = ''
                     elif 'NUM' == direccion.attrib['nombre']:
                         if direccion.text != None:
                             numero = ', ' + direccion.text.strip()
                         else:
-                            numero=''
+                            numero = ''
                     elif 'LOCALIDAD' == direccion.attrib['nombre']:
                         if direccion.text != None:
                             localidad = '. ' + direccion.text.strip()
                         else:
-                            localidad=''
+                            localidad = ''
                     elif 'PROVINCIA' == direccion.attrib['nombre']:
                         if direccion.text != None:
                             provincia = '. ' + direccion.text.strip()
                         else:
-                            provincia=''
+                            provincia = ''
                     elif 'CODIGO-POSTAL' == direccion.attrib['nombre']:
                         if direccion.text != None:
                             codigo_postal = ', ' + direccion.text.strip()
                         else:
-                            codigo_postal=''
+                            codigo_postal = ''
 
                     if direccion.text != None:
                         parque[direccion.attrib['nombre']
@@ -70,32 +59,6 @@ def procesar_XML():
 
         datos[parque['NOMBRE']] = parque
     return datos
-
-
-def pedir_entrada(datos):
-    mostrar_listado(datos.keys())
-    entrada = input()
-    continuar = True
-    while continuar:
-        if entrada in datos.keys():
-            mostrar_informacion(datos[entrada])
-
-            mostrar_listado(datos.keys())
-            entrada = input()
-
-        elif entrada.upper() == 'FIN':
-            continuar = False
-        else:
-            mostrar_listado(datos.keys())
-            print('\n\nEl parque', entrada,
-                  'no ha sido encontrado, vuelva a introduir un nombre')
-            entrada = input()
-
-
-def mostrar_listado(datos):
-    for elemento in datos:
-        print(elemento.strip())
-    print('\nPara salir del programa introduzca FIN')
 
 
 def mostrar_informacion(parque):
@@ -129,6 +92,32 @@ def mostrar_informacion(parque):
         print(parque['LOCALIZACION']+'\n')
 
 
-# obtenerDatos()
+def preguntar_filtros():
+    datos = dict()
+    print('\nIntroduzca los campos a filtar:\n')
+    print('Accesibilidad: ', end='')
+    datos['Accesibilidad'] = input()
+    print('Nombre: ', end='')
+    datos['Nombre'] = input()
+    print('Barrio: ', end='')
+    datos['Barrio'] = input()
+    print('Distrito: ', end='')
+    datos['Distrito'] = input()
+    return datos
+
+
+def filtrar_datos(datos, filtro):
+    resultado = list()
+    for clave, valores in datos.items():
+        for clave_filtro, valor_filtro in filtro.items():
+            if filtro[clave_filtro] != '' and clave_filtro.upper() in valores and valores[clave_filtro.upper()].find(valor_filtro) > -1:
+                resultado.append(clave)
+
+    return resultado
+
+
 datos = procesar_XML()
-pedir_entrada(datos)
+filtro = preguntar_filtros()
+parques = filtrar_datos(datos, filtro)
+for parque in parques:
+    mostrar_informacion(datos[parque])
