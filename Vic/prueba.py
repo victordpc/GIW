@@ -21,7 +21,8 @@ def procesar_webs(url_indice, lista_ignorar_claves):
 
         elementos = dict()
         for i in range(len(etiquetas_dl)):
-            elementos[etiquetas_h3[i]] = etiquetas_dl[i]
+            elementos[etiquetas_h3[i]] = 'Planta:\n\n' + \
+                etiquetas_h3[i]+'\n\n' + etiquetas_dl[i]
 
         datos[nombre] = elementos
     return datos
@@ -80,7 +81,7 @@ def limpiar_etiqueta_dl(etiquetas):
 
 
 # def mostar_datos_planta(datos, soup):
-#     '''Devuelve las listas de plantas y descripciones 
+#     '''Devuelve las listas de plantas y descripciones
 #     '''
 #     plantas = soup.find('div', class_='mw-parser-output')
 #     etiquetas_h3 = limpiar_etiqueta_h3(plantas.find_all(re.compile('(h3)')))
@@ -107,7 +108,7 @@ def menu_indice(datos, nombres_indice, url_indice):
 
     nombre_planta = list(datos[nombres_indice[int(op2)]].keys())[int(op3)-1]
     descripcion_planta = datos[nombres_indice[int(op2)]][nombre_planta]
-    print('Planta:\n\n' + nombre_planta+'\n\n' + descripcion_planta)
+    print(descripcion_planta)
 
 
 def menu_clave(datos, nombres_indice, url_indice):
@@ -115,7 +116,25 @@ def menu_clave(datos, nombres_indice, url_indice):
     '''
     palabras = input(
         '\n Introduzca las claves por las que quiere realizar la búsqueda\n')
-    a = input()
+    palabras = palabras.split(' ')
+    cadena = '('+palabras[0]+')+'
+
+    if len(palabras) > 1:
+        op_join = input('\nHa introducido varias palabras para busqueda, como quiere realizarla:\n(1) AND plantas donde aparecen todas las palabras introducidas\n(2) OR plantas donde aparece alguna de las palabras introducidas\n')
+
+    if op_join == str(1):
+        cadena = '(?:.*'+palabras[0]+')'
+        for i in range(1,len(palabras)):
+            cadena = cadena + '(?:.*'+palabras[i]+')'
+    if op_join == str(2):
+        for i in range(1,len(palabras)):
+            cadena = cadena + '|('+palabras[i]+')+'
+        
+    cadena = re.compile(cadena)
+    for conjunto in datos.values():
+        filtro_salida = list(filter(cadena.search  ,list(conjunto.values())))
+        for salida in filtro_salida:
+            print(salida)
 
 
 def main():
