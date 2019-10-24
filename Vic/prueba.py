@@ -6,6 +6,8 @@ import requests
 
 
 def procesar_webs(url_indice, lista_ignorar_claves):
+    '''Procesa todas las páginas recibidas para obtener los datos limpios
+    '''
     datos = dict()
     for nombre, url in url_indice.items():
         html = urllib.request.urlopen(url).read()
@@ -26,24 +28,6 @@ def procesar_webs(url_indice, lista_ignorar_claves):
 
         datos[nombre] = elementos
     return datos
-
-
-# def buscar_lista_indices(url):
-#     '''Busca en la url dada los nombres de las plantas en el índice
-#     '''
-#     lista_ignorar_claves = ['Notas y referencias', 'Notas',
-#                             'Referencias', 'Ver también', 'Bibliografía', 'Véase también']
-
-#     html = urllib.request.urlopen(url).read()
-#     soup = BeautifulSoup(html, 'html.parser')
-
-#     etiquetas = soup.find_all('span', class_='toctext')
-#     etiquetas = map(lambda x: x.string, etiquetas)
-
-#     etiquetas = list(
-#         filter(lambda x: x not in lista_ignorar_claves, etiquetas))
-
-#     return etiquetas, soup
 
 
 def limpiar_etiqueta_h3(etiquetas):
@@ -80,14 +64,37 @@ def limpiar_etiqueta_dl(etiquetas):
     return datos
 
 
-# def mostar_datos_planta(datos, soup):
-#     '''Devuelve las listas de plantas y descripciones
-#     '''
-#     plantas = soup.find('div', class_='mw-parser-output')
-#     etiquetas_h3 = limpiar_etiqueta_h3(plantas.find_all(re.compile('(h3)')))
-#     etiquetas_dl = limpiar_etiqueta_dl(plantas.find_all(re.compile('(dl)')))
+def filtrar_or(palabras, datos):
+    cadena = '('+palabras[0]+')+'
+    for i in range(1, len(palabras)):
+        cadena = cadena + '|('+palabras[i]+')+'
 
-#     return etiquetas_h3, etiquetas_dl
+    cadena = re.compile(cadena, re.IGNORECASE)
+    for conjunto in datos.values():
+        filtro_salida = list(
+            filter(cadena.search, list(conjunto.values())))
+        for salida in filtro_salida:
+            print(salida.strip())
+
+
+def filtrar_and(palabras, datos):
+    ''' Filtra los datos en función de las palabras recibidas usando la interseccion de los resultados parciales 
+    '''
+    filtro_salida = list()
+    cadena = '('+palabras[0]+')'
+    cadena = re.compile(cadena, re.IGNORECASE)
+
+    for conjunto in datos.values():
+        filtro_salida.extend(
+            list(filter(cadena.search, list(conjunto.values()))))
+
+    for i in range(1, len(palabras)):
+        cadena = '('+palabras[i]+')'
+        cadena = re.compile(cadena, re.IGNORECASE)
+        filtro_salida = list(
+            filter(cadena.search, filtro_salida))
+
+    return filtro_salida
 
 
 def menu_indice(datos, nombres_indice, url_indice):
@@ -117,24 +124,18 @@ def menu_clave(datos, nombres_indice, url_indice):
     palabras = input(
         '\n Introduzca las claves por las que quiere realizar la búsqueda\n')
     palabras = palabras.split(' ')
-    cadena = '('+palabras[0]+')+'
 
+    op_join = 0
     if len(palabras) > 1:
         op_join = input('\nHa introducido varias palabras para busqueda, como quiere realizarla:\n(1) AND plantas donde aparecen todas las palabras introducidas\n(2) OR plantas donde aparece alguna de las palabras introducidas\n')
 
     if op_join == str(1):
-        cadena = '(?:.*'+palabras[0]+')'
-        for i in range(1,len(palabras)):
-            cadena = cadena + '(?:.*'+palabras[i]+')'
-    if op_join == str(2):
-        for i in range(1,len(palabras)):
-            cadena = cadena + '|('+palabras[i]+')+'
-        
-    cadena = re.compile(cadena)
-    for conjunto in datos.values():
-        filtro_salida = list(filter(cadena.search  ,list(conjunto.values())))
-        for salida in filtro_salida:
-            print(salida)
+        filtro_salida = filtrar_and(palabras, datos)
+        for elemento in filtro_salida:
+            print(elemento.strip())
+
+    else:
+        filtrar_or(palabras, datos)
 
 
 def main():
@@ -163,19 +164,10 @@ def main():
             menu_clave(datos, nombres_indice, url_indice)
 
         op2 = input(
-            '\n\n¿Desea realizar otra búsqueda?\n1. Si\n2. Finalizar programa\n')
+            '\n\n¿Desea realizar otra búsqueda?\n(1). Si\n(2). Finalizar programa\n')
 
         if op2 == '2':
             continuar = False
 
 
 main()
-
-# html=urllib.request.urlopen('https://es.wikipedia.org/wiki/Anexo:Plantas_medicinales_(A-B)').read()
-html = requests.get(
-    'https://es.wikipedia.org/wiki/Anexo:Plantas_medicinales_(A-B)').text
-
-soup = BeautifulSoup(html, 'html.parser')
-seleccion = 'Buganvilea'
-
-# mostar_datos_planta(seleccion, soup)
