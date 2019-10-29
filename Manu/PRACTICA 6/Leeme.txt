@@ -1,0 +1,3 @@
+Para el correcto funcionamiento del proyecto es necesario
+que el notebook, la libreria bottle y las carpetas de
+recursos y plantillas esten en el mismo directorio.
