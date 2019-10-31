@@ -93,8 +93,8 @@
             <div>
                 <h3>¿ Que tipo de busqueda desea realizar ?</h3>
                 <form action="/Service2Results" method="post">
-                    <input type="radio" name="tipoBusqueda" value="AND"> Quiero que coincidan exactamente las palabras introducidas<br>
-                    <input type="radio" name="tipoBusqueda" value="OR" checked> Quiero que se busque cualquier coincidencia con las palabras introducidas<br>
+                    <input type="radio" name="tipoBusqueda" value="AND"> Quiero que todas las palabras se encuentren en la descripción<br>
+                    <input type="radio" name="tipoBusqueda" value="OR" checked> No me importa si todas las palabras no están en la descripción<br>
                     <br>
                     <input type="submit" class="btn btn-primary" value="Enviar palabras">
                 </form>
