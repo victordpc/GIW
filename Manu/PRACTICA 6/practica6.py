@@ -316,7 +316,7 @@ class Controller:
         elif context["event"] == "SHOW_SERVICE_3_RESULTS_TO_USER":
 
             context["object"]["plantsForDiseases"] = Model.getInstance().obtainPlantsForDiseases(
-                context["object"]["diseases"]
+                map(lambda x: x.replace('Ã¡','á').replace('Ã©','é').replace('Ã\xad','í').replace('Ã³','ó').replace('Ãº','ú'),context["object"]["diseases"])
             )
 
             return DispatcherView.getInstance().generateResultsForService(context["object"])
