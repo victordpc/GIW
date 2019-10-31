@@ -93,8 +93,8 @@
             <div>
                 <h3>¿ Que tipo de busqueda desea realizar ?</h3>
                 <form action="/Service2Results" method="post">
-                    <input type="radio" name="tipoBusqueda" value="AND">Quiero que coincidan exactamente las palabras introducidas<br>
-                    <input type="radio" name="tipoBusqueda" value="OR" checked>Quiero que se busque cualquier coincidencia con las palabras introducidas<br>
+                    <input type="radio" name="tipoBusqueda" value="AND"> Quiero que coincidan exactamente las palabras introducidas<br>
+                    <input type="radio" name="tipoBusqueda" value="OR" checked> Quiero que se busque cualquier coincidencia con las palabras introducidas<br>
                     <br>
                     <input type="submit" class="btn btn-primary" value="Enviar palabras">
                 </form>
@@ -106,7 +106,7 @@
                 <h3>Marque las enfermedades por las que desea buscar:</h3>
                 <form action="/Service3Results" method="post">
                     %for disease in dict['diseases']:
-                        <input type="checkbox" name="{{disease}}">{{disease}}<br>
+                        <input type="checkbox" name="{{disease}}"> {{disease}}<br>
                     %end
                     <br>
                     <input type="submit" class="btn btn-primary" value="Obtener Plantas">
