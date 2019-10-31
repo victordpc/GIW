@@ -1,3 +1,2 @@
-Para el correcto funcionamiento del proyecto es necesario
-que el notebook, la libreria bottle y las carpetas de
-recursos y plantillas esten en el mismo directorio.
+En el mismo directorio que el notebook han de estas las
+carpetas "public", "resources", "view" y la libreria bottle.
