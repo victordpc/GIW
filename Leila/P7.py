@@ -33,15 +33,14 @@ def find_users():
     if len(errores) > 0:
         return template('\plantillas\errorParametros.tpl', msg = errores)
 
-    name = datos.name
-    surname = datos.surname
-    birthdate = datos.birthdate
-
     mongoclient = MongoClient()
     db = mongoclient.giw
     c = db.usuarios
 
-    persona = {'name': name, 'surname': surname, 'birthdate': birthdate}
+    persona = dict()
+    for clave, valor in datos.items():
+        persona[clave] = valor
+
     res = c.find(persona)
 
     return template('\plantillas\buscarUsuario', msg = res)
