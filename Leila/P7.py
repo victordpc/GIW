@@ -20,9 +20,33 @@
 
 import pymongo
 from bottle import get, run
+from pymongo import MongoClient
+
+
 
 @get('/find_users')
 def find_users():
+    datos = request.query
+    validos = ['name', 'surname', 'birthdate']
+    errores = filter(lambda x: x not in validos, datos.keys())
+
+    if len(errores) > 0:
+        return template('\plantillas\errorParametros.tpl', msg = errores)
+
+    name = datos.name
+    surname = datos.surname
+    birthdate = datos.birthdate
+
+    mongoclient = MongoClient()
+    db = mongoclient.giw
+    c = db.usuarios
+
+    persona = {'name': name, 'surname': surname, 'birthdate': birthdate}
+    res = c.find(persona)
+
+    return template('\plantillas\buscarUsuario', msg = res)
+
+    
     # http://localhost:8080/find_users?name=Luz
     # http://localhost:8080/find_users?name=Luz&surname=Romero
     # http://localhost:8080/find_users?name=Luz&surname=Romero&birthdate=2006-08-14
