@@ -1,11 +1,11 @@
 # -*- coding: utf-8 -*-
 
 
-from pymongo import MongoClient
+from pymongo import MongoClient, CursorType
 
 
 servidor = 'localhost'
-puerto = '27017'
+puerto = 27017
 
 
 def getMongoClass():
@@ -36,22 +36,27 @@ def readMongo(filtro, proyectar=None, limite=None, orden=None):
         res = clase.find(filtro, proyectar)
 
     elif proyectar == None and limite != None and orden == None:
-        res = clase.find(filtro).limit(limite)
+        res = clase.find(filtro, None, 0, limite)
 
     elif proyectar == None and limite == None and orden != None:
-        res = clase.find(filtro).order(orden)
+        res = clase.find(filtro, None, 0, 0, False,
+                         CursorType.NON_TAILABLE, orden)
 
     elif proyectar != None and limite != None and orden == None:
-        res = clase.find(filtro, proyectar).limit(limite)
+        res = clase.find(filtro, proyectar, 0, limite)
 
     elif proyectar != None and limite == None and orden != None:
-        res = clase.find(filtro, proyectar).order(orden)
+        res = clase.find(filtro, proyectar, 0, 0, False,
+                         CursorType.NON_TAILABLE, orden)
 
     elif proyectar == None and limite != None and orden != None:
-        res = clase.find(filtro).limit(limite).order(orden)
+        res = clase.find(filtro, None, 0, limite, False,
+                         CursorType.NON_TAILABLE, orden)
 
     else:
-        res = clase.find(filtro, proyectar).limit(limite).order(orden)
+        res = clase.find(filtro, proyectar, 0, limite, False,
+                         CursorType.NON_TAILABLE, orden)
+
     return res
 
 
