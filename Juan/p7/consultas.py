@@ -23,7 +23,9 @@ def control_parameters(request, valores):
 
     if len(errores) > 0:
         return template('error_parameters.tpl', msg=errores)
-    return datos
+    elif len(datos) < 1 or len(datos) > len(valores):
+        return template('error_num_parameters.tpl', numero=len(valores), actual=len(datos), msg=datos.keys())
+
 
 
 @get('/find_users')
