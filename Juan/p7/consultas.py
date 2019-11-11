@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ##
-## INCLUIR LA CABECERA AQUI
+# INCLUIR LA CABECERA AQUI
 ##
 
 # Incluir los 'import' necesarios
@@ -16,8 +16,20 @@ client = MongoClient('mongodb://localhost:27017/')
 db = client.giw
 
 
+def control_parameters(request, valores):
+
+    datos = request.query.dict
+    errores = list(filter(lambda x: x not in valores, datos.keys()))
+
+    if len(errores) > 0:
+        return template('error_parameters.tpl', msg=errores)
+    return datos
+
+
 @get('/find_users')
 def find_users():
+
+    control_parameters(request, ['name', 'surname', 'birthdate'])
     filters = {}
     if request.query.name:
         filters['name'] = {'$eq': request.query.name}
@@ -26,17 +38,14 @@ def find_users():
     if request.query.surname:
         filters['surname'] = {'$eq': request.query.surname}
 
-    # http://localhost:8080/find_users?name=Luz
-    print(filters)
     coincidences = list(db.usuarios.find(filters))
-    print(coincidences)
-    # http://localhost:8080/find_users?name=Luz&surname=Romero
-    # http://localhost:8080/find_users?name=Luz&surname=Romero&birthdate=2006-08-14
     return template('all_fields_table.tpl', {'coincidences': coincidences, 'title': 'Resultados de búsqueda'})
 
 
 @get('/find_email_birthdate')
 def email_birthdate():  # http://localhost:8080/find_email_birthdate?from=1973-01-01&to=1990-12-31
+
+    control_parameters(request, ['from', 'to'])
     fromDate = request.query['from']
     toDate = request.query.to
 
@@ -46,17 +55,14 @@ def email_birthdate():  # http://localhost:8080/find_email_birthdate?from=1973-0
     filters = [{"$addFields": {"convDate": {"$toDate": "$birthdate"}}},
                {"$match": {"convDate": {"$gte": formattedFromDate, "$lte": formattedToDate}}}]
 
-    # http://localhost:8080/find_users?name=Luz
-    print(filters)
     coincidences = list(db.usuarios.aggregate(filters))
-    print(coincidences)
-    # http://localhost:8080/find_users?name=Luz&surname=Romero
-    # http://localhost:8080/find_users?name=Luz&surname=Romero&birthdate=2006-08-14
     return template('id_mail_birthdate_table.tpl', {'coincidences': coincidences, 'title': 'Resultados de búsqueda'})
 
 
 @get('/find_country_likes_limit_sorted')
 def find_country_likes_limit_sorted():  # http://localhost:8080/find_country_likes_limit_sorted?country=Irlanda&likes=movies,animals&limit=4&ord=asc
+
+    control_parameters(request, ['country', 'likes', 'limit', 'ord'])
     country = request.query.country
     likes = request.query.likes.split(',')
     limit = request.query.limit
@@ -67,23 +73,19 @@ def find_country_likes_limit_sorted():  # http://localhost:8080/find_country_lik
     else:
         order = -1
 
-    # { tags: { $elemMatch: ["red", "blank"] } }
     filters = [{"$addFields": {"convDate": {"$toDate": "$birthdate"}}},
                {"$match": {"address.country": country, "likes": {"$in": likes}}},
                {"$sort": {"convDate": order}},
                {"$limit": int(limit)}]
 
-    # http://localhost:8080/find_users?name=Luz
-    print(filters)
     coincidences = list(db.usuarios.aggregate(filters))
-    print(coincidences)
-    # http://localhost:8080/find_users?name=Luz&surname=Romero
-    # http://localhost:8080/find_users?name=Luz&surname=Romero&birthdate=2006-08-14
     return template('all_fields_table.tpl', {'coincidences': coincidences, 'title': 'Resultados de búsqueda'})
 
 
 @get('/find_birth_month')
 def find_birth_month():  # http://localhost:8080/find_birth_month?month=abril
+
+    control_parameters(request, ['month'])
     month = request.query.month
 
     monthsMap = {
@@ -101,41 +103,34 @@ def find_birth_month():  # http://localhost:8080/find_birth_month?month=abril
         "diciembre": 12
     }
 
-    # { tags: { $elemMatch: ["red", "blank"] } }
     filters = [{"$addFields": {"convDate": {"$toDate": "$birthdate"}}},
                {"$addFields": {"month": {"$month": '$convDate'}}},
                {"$match": {"month": monthsMap[month]}},
                {"$sort": {"convDate": 1}}]
 
-    # http://localhost:8080/find_users?name=Luz
-    print(filters)
     coincidences = list(db.usuarios.aggregate(filters))
-    print(coincidences)
-    # http://localhost:8080/find_users?name=Luz&surname=Romero
-    # http://localhost:8080/find_users?name=Luz&surname=Romero&birthdate=2006-08-14
     return template('all_fields_table.tpl', {'coincidences': coincidences, 'title': 'Resultados de búsqueda'})
 
 
 @get('/find_likes_not_ending')
 def find_likes_not_ending():  # http://localhost:8080/find_likes_not_ending?ending=s
+
+    control_parameters(request, ['ending'])
     ending = request.query.ending
 
     regx = re.compile(ending + "$", re.IGNORECASE)
     filters = {"likes": {"$not": regx}}
 
-    # http://localhost:8080/find_users?name=Luz
-    print(filters)
     coincidences = list(db.usuarios.find(filters))
-    print(coincidences)
-    # http://localhost:8080/find_users?name=Luz&surname=Romero
-    # http://localhost:8080/find_users?name=Luz&surname=Romero&birthdate=2006-08-14
     return template('all_fields_table.tpl', {'coincidences': coincidences, 'title': 'Resultados de búsqueda'})
 
 
 @get('/find_leap_year')
 def find_leap_year():  # http://localhost:8080/find_leap_year?exp=20
+
+    control_parameters(request, ['exp'])
     exp = request.query.exp
-    # { tags: { $elemMatch: ["red", "blank"] } }
+
     filters = [{"$addFields": {"convDate": {"$toDate": "$birthdate"}}},
                {"$addFields": {"year": {"$year": '$convDate'}}},
                {"$match": {"$or": [{"$and": [{"year": {"$mod": [4, 0]}}, {"year": {"$not": {"$mod": [100, 0]}}}]},
@@ -145,12 +140,7 @@ def find_leap_year():  # http://localhost:8080/find_leap_year?exp=20
                 }
                ]
 
-    # http://localhost:8080/find_users?name=Luz
-    print(filters)
     coincidences = list(db.usuarios.aggregate(filters))
-    print(coincidences)
-    # http://localhost:8080/find_users?name=Luz&surname=Romero
-    # http://localhost:8080/find_users?name=Luz&surname=Romero&birthdate=2006-08-14
     return template('all_fields_table.tpl', {'coincidences': coincidences, 'title': 'Resultados de búsqueda'})
 
 
