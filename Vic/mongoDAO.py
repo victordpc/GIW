@@ -10,8 +10,8 @@ puerto = 27017
 
 def getMongoClass():
     mongoclient = MongoClient(host=servidor, port=puerto)
-    db = mongoclient.giw
-    return db.usuarios
+    db = mongoclient.giw.usuarios
+    return db
 
 
 def createSingleMongo(filtro):
