@@ -24,6 +24,8 @@ def control_parameters(request, valores):
 
     if len(errores) > 0:
         return template('plantillas/errorParametros.tpl', msg=errores)
+    elif len(datos) < 1 or len(datos) > len(valores):
+        return template('/plantillas/errorNumParametros.tpl', numero=len(valores), actual=len(datos), msg=datos.keys())
     return datos
 
 
