@@ -37,26 +37,26 @@ class Producto(Document):
 
         for index in range(0, 12):
             controlNumber += (int(self.codigoBarras[index])) if (index % 2 == 0) else (
-                        int(self.codigoBarras[index]) * 3)
+                    int(self.codigoBarras[index]) * 3)
 
-        while (controlNumber - tenPower > 0):
+        while controlNumber - tenPower > 0:
             tenPower *= 10
 
         controlNumber = tenPower - controlNumber
 
-        if (controlNumber != int(self.codigoBarras[12])):
+        if controlNumber != int(self.codigoBarras[12]):
             raise ValidationError(f"El digito de control es {self.codigoBarras[12]} pero deberia ser {controlNumber}")
 
-        if (self.categoriaPrincipal != self.listaCategoriasSecundarias[0]):
+        if self.categoriaPrincipal != self.listaCategoriasSecundarias[0]:
             raise ValidationError(
                 f"La categoria principal {self.categoriaPrincipal} no aparece como la primera de las secundarias {self.listaCategoriasSecundarias[0]}")
 
-        if (self.categoriaPrincipal != int(self.categoriaPrincipal)):
+        if self.categoriaPrincipal != int(self.categoriaPrincipal):
             raise ValidationError(f"La categoria principal {self.categoriaPrincipal} no es un numero natural.")
 
         for categoria in self.listaCategoriasSecundarias:
 
-            if (categoria != int(categoria)):
+            if categoria != int(categoria):
                 raise ValidationError(f"La categoria secundaria {categoria} no es un numero natural.")
 
 
@@ -69,11 +69,11 @@ class LineaPedido(EmbeddedDocument):
 
     def clean(self):  # Se lanza al llamar a .save(), permite hacer comprobaciones personalizadas.
 
-        if (self.precioTotalLinea != self.cantidadProductosComprados * self.precioProducto):
+        if self.precioTotalLinea != self.cantidadProductosComprados * self.precioProducto:
             raise ValidationError(
-                f"El preio de la linea es {self.precioTotalLinea} pero deberia ser {self.cantidadProductosComprados * self.precioProducto}")
+                f"El precio de la linea es {self.precioTotalLinea} pero deberia ser {self.cantidadProductosComprados * self.precioProducto}")
 
-        if (self.nombreProducto != self.referenciaProducto.nombre):
+        if self.nombreProducto != self.referenciaProducto.nombre:
             raise ValidationError(
                 f"El nombre del producto es {self.nombreProducto} pero referencia a {self.referenciaProducto.nombre}")
 
@@ -90,7 +90,7 @@ class Pedido(Document):
         for linea in self.listaLineasPedido:
             totalLineas += linea.precioTotalLinea
 
-        if (totalLineas != self.precioTotalPedido):
+        if totalLineas != self.precioTotalPedido:
             raise ValidationError(
                 f"El precio total {self.precioTotalPedido} no coincide con la suma de las lineas {totalLineas}")
 
@@ -99,24 +99,24 @@ class TarjetaCredito(EmbeddedDocument):
     nombrePropietario = StringField(required=True)
     numeroTarjeta = StringField(required=True, min_length=16, max_length=16, regex="^[0-9]{16}$")
     mesCaducidad = StringField(required=True, min_length=2, max_length=2, regex="^[0-9]{2}$")
-    añoCaducidad = StringField(required=True, min_length=4, max_length=4, regex="^[0-9]{4}$")
+    annoCaducidad = StringField(required=True, min_length=4, max_length=4, regex="^[0-9]{4}$")
     codigoVerificacionTarjeta = StringField(required=True, min_length=3, max_length=3, regex="^[0-9]{3}$")
 
     def clean(self):  # Se lanza al llamar a .save(), permite hacer comprobaciones personalizadas.
 
         mes = int(self.mesCaducidad)
-        año = int(self.añoCaducidad)
+        anno = int(self.annoCaducidad)
 
-        if (mes < 1 or mes > 12):
+        if mes < 1 or mes > 12:
             raise ValidationError(f"El mes {mes} no es un mes valido.")
 
-        if (año < datetime.today().year):
-            raise ValidationError(f"El año {año} no es un año valido.")
+        if anno < datetime.today().year:
+            raise ValidationError(f"El año {anno} no es un año valido.")
 
-        if (año != datetime.today().year + 4):
-            raise ValidationError(f"Año de caducidad {año} incorrecto, las tarjetas se renuevan cada cuatro años.")
+        if anno != datetime.today().year + 4:
+            raise ValidationError(f"Año de caducidad {anno} incorrecto, las tarjetas se renuevan cada cuatro años.")
 
-        if (mes != datetime.today().month):
+        if mes != datetime.today().month:
             raise ValidationError(f"El mes de caducidad ({mes}) difiere del de expedicion ({datetime.today().month}).")
 
 
@@ -136,7 +136,7 @@ class Usuario(DynamicDocument):
 
         letras = "TRWAGMYFPDXBNJZSQVHLCKE"
 
-        if (self.dni[8] != letras[numero % 23]):
+        if self.dni[8] != letras[numero % 23]:
             raise ValidationError(f"El DNI {self.dni} es incorrecto, fallo en el calculo de su letra.")
 
 
@@ -392,7 +392,7 @@ def insertar():
         nombrePropietario="Manuel",
         numeroTarjeta="0123456789012345",
         mesCaducidad=str(datetime.today().month),
-        añoCaducidad=str(datetime.today().year + 4),
+        annoCaducidad=str(datetime.today().year + 4),
         codigoVerificacionTarjeta="123"
     )
 
@@ -416,7 +416,7 @@ def insertar():
         nombrePropietario="Víctor",
         numeroTarjeta="0000111122223333",
         mesCaducidad=str(datetime.today().month),
-        añoCaducidad=str(datetime.today().year + 4),
+        annoCaducidad=str(datetime.today().year + 4),
         codigoVerificacionTarjeta="456"
     )
 
@@ -426,7 +426,7 @@ def insertar():
         nombrePropietario="Víctor",
         numeroTarjeta="4444555566667777",
         mesCaducidad=str(datetime.today().month),
-        añoCaducidad=str(datetime.today().year + 4),
+        annoCaducidad=str(datetime.today().year + 4),
         codigoVerificacionTarjeta="789"
     )
 
@@ -493,7 +493,7 @@ def insertar():
 
 try:
 
-    connect('practica8DB')
+    connect('giw_mongoengine')
 
     insertar()
 
