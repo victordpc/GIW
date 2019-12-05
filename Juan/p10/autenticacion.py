@@ -32,7 +32,7 @@ from pymongo import MongoClient
 #
 # Las contraseñas no son almacenadas en la base de datos, en su lugar, se almacena
 # el hash de la misma, de forma que en caso de un acceso no autorizado a la base de datos
-# no sería suplantar la identidad de los usuarios puesto que no es posible obtener la contraseña
+# no sería posible suplantar la identidad de los usuarios puesto que no es posible obtener la contraseña
 # a partir de su hash (si la función es segura).
 #
 # Para el proceso de hashing, hemos utilizado la librería 'bcrypt', presente en muchos otros lenguajes
