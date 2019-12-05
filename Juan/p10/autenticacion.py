@@ -38,8 +38,8 @@ from pymongo import MongoClient
 # Para el proceso de hashing, hemos utilizado la librería 'bcrypt', presente en muchos otros lenguajes
 # como PHP. BCrypt está basado en Blowfish (un tipo de cifrado) y es utilizado por defecto en algunas
 # distribuciones de Linux. Para la generación del hash utiliza un 'salt' que es prefijado al hash de la contraseña,
-# para ser guardado en la base de datos. Con este 'salt' aumentamos con mayor garantía
-# que dos contraseñas iguales, generen hashes iguales, dificultando los ataques con diccionarios.
+# para ser guardado en la base de datos. Con este 'salt' aumentamos la garantía de
+# que dadas dos contraseñas iguales, no se generen hashes iguales, dificultando los ataques con diccionarios.
 #
 # Por defecto, el 'salt' tiene un coste de 2^12 iteraciones (aunque puede configurarse para un valor diferente),
 # esto supone un mayor coste de cálculo del hash y por tanto hace más difícil aplicar fuerza bruta. Este valor
