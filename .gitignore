@@ -103,3 +103,5 @@ venv.bak/
 # mypy
 .mypy_cache/
 .vscode/settings.json
+/Juan/p11/session/
+/Juan/p11/grupo01.zip

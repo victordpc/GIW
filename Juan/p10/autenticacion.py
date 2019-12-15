@@ -175,6 +175,9 @@ def generate_gauth_uri(user):
 
 
 def totp_verify(token, user):
+    if 'secret' not in user:
+        return False
+
     secret = user['secret']
     return otp.valid_totp(token, secret)
 
@@ -212,7 +215,7 @@ def signup_totp():
 
     auth_uri = generate_gauth_uri(user)
 
-    return template('totp_signup_success.tpl',
+    return template('login_google.tpl',
                     {'nickname': nickname, 'totp_secret': secret, 'google_auth_uri': auth_uri})
 
 
