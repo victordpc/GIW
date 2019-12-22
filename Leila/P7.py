@@ -26,6 +26,11 @@ from pymongo import MongoClient
 
 @get('/find_users')
 def find_users():
+
+    # http://localhost:8080/find_users?name=Luz
+    # http://localhost:8080/find_users?name=Luz&surname=Romero
+    # http://localhost:8080/find_users?name=Luz&surname=Romero&birthdate=2006-08-14
+
     datos = request.query
     validos = ['name', 'surname', 'birthdate']
     errores = filter(lambda x: x not in validos, datos.keys())
@@ -43,23 +48,56 @@ def find_users():
 
     res = c.find(persona)
 
-    return template('\plantillas\buscarUsuario', msg = res)
-
-    
-    # http://localhost:8080/find_users?name=Luz
-    # http://localhost:8080/find_users?name=Luz&surname=Romero
-    # http://localhost:8080/find_users?name=Luz&surname=Romero&birthdate=2006-08-14
+    return template('\plantillas\buscarUsuarios.tpl', msg = res)
 
 
 @get('/find_email_birthdate')
 def email_birthdate():
+
     # http://localhost:8080/find_email_birthdate?from=1973-01-01&to=1990-12-31
+
+    datos = request.query
+    validos = ['from', 'to']
+    errores = filter(lambda x: x not in validos, datos.keys())
+
+    if len(errores) > 0:
+        return template('\plantillas\errorParametros.tpl', msg = errores)
+
+    mongoclient = MongoClient()
+    db = mongoclient.giw
+    c = db.usuarios
+
+    persona = dict()
+    persona['$gte'] = valor['from']
+    persona['$lte'] = valor['to']
+
+    res = c.find(['birthdate'] = persona)
+
+    return template('\plantillas\buscarCumple.tpl', msg = res)
 
 
 @get('/find_country_likes_limit_sorted')
 def find_country_likes_limit_sorted():
     # http://localhost:8080/find_country_likes_limit_sorted?country=Irlanda&likes=movies,animals&limit=4&ord=asc
+    datos = request.query
+    validos = ['country', 'likes', 'limit', 'ord']
+    errores = filter(lambda x: x not in validos, datos.keys())
 
+    if len(errores) > 0:
+        return template('\plantillas\errorParametros.tpl', msg = errores)
+
+    mongoclient = MongoClient()
+    db = mongoclient.giw
+    c = db.usuarios
+
+    persona = dict()
+    persona['country'] = datos.country
+    persona['likes'] = datos.likes
+    
+
+    res = c.find(persona)
+
+    return template('\plantillas\buscarAficiones.tpl', msg = res)
 
 @get('/find_birth_month')
 def find_birth_month():
